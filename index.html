@@ -5,212 +5,347 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Butcherman|Pacifico|Saira+Stencil+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./[assets]/css/style.css">
 <!-- FIND IMAGE FOR ICON -->
 <link rel="icon" type="image" href="./[images]/Web-Icon.png">
 
 <body>
-  <style>
-    .w3-col {
-      align-items: center;
-    }
-    .contact {
-      margin-left: 13%;
-    }
-    #profilePic{
-      height: 30rem;
-    }
-  </style>
 
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-        onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="#home" class="w3-bar-item w3-button">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-        <i class="fa fa-search"></i>
-      </a>
+<style>
+  body{
+    background-color: #FCF6F6;
+  }
+  h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 70px;
+    /* background-color:lightgray;
+    border: 3px solid black; */
+    font-family: 'Saira Stencil One', cursive;
+    font-family: 'Butcherman', cursive;
+    font-family: 'Pacifico', cursive;
+    filter: drop-shadow(5px 5px 2px #ff0000);
+    height: 200px;
+    color: lightgrey;
+    /* position: relative; */
+  }
+  h2{
+    text-align: center;
+    font-weight: 700;
+    height: 200px;
+    font-size: 40px;
+    /* background-color:lightgray;
+    border: 3px solid black; */
+    font-family: 'Saira Stencil One', cursive;
+    filter: drop-shadow(5px 5px 2px #ff0000);
+    color: lightgrey;
+  }
+  h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    /* background-color:lightgray;
+    border: 3px solid black; */
+    font-family: 'Saira Stencil One', cursive;
+    filter: drop-shadow(5px 5px 2px #00e5ff);
+  }
+  h4{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    /* background-color:lightgray;
+    border: 3px solid black; */
+    font-family: 'Saira Stencil One', cursive;
+    font-family: 'Butcherman', cursive;
+    font-family: 'Pacifico', cursive;
+    filter: drop-shadow(5px 5px 2px #00e5ff);
+    color: rgb(0, 0, 0);
+  }
+  p{
+    font-weight: 900;
+    font-size: 112%;
+    text-decoration: underline;
+  }
+
+  .w3-col {
+    align-items: center;
+  }
+  .w3-large{
+    font-weight: 400;
+  }
+  .contact {
+    margin-left: 13%;
+  }
+  .w3-xlarge{
+    font-weight: 450;
+  }
+  /* .heightAdj{
+    height: 400px;
+  } */
+  .projectBorder{
+    text-align: center;
+    font-weight: 400;
+    filter: drop-shadow(10px 10px 10px 10px #00e5ff);
+    /* background-color:lightgray; */
+    /* border: 5px solid rgb(0, 23, 124); */
+    background-color: rgba(216, 250, 250, 0.671);
+    /* background-color: #FAF2F2; */
+    border: 8px solid;
+    border-top-color: rgb(0, 0, 0);
+    /* border-right-color: black; */
+    border-bottom-color: rgb(0, 0, 0);
+    /* border-left-color: black; */
+  }
+  .edits{
+    text-align: center;
+    font-weight: 400;
+    filter: drop-shadow(10px 10px 10px 10px #00e5ff);
+    /* background-color:lightgray; */
+    /* border: 5px solid rgb(0, 23, 124); */
+    background-color: rgba(216, 250, 250, 0.671);
+    /* background-color: #FAF2F2; */
+    border: 8px solid;
+    border-top-color: rgb(0, 0, 0);
+    /* border-right-color: black; */
+    border-bottom-color: rgb(0, 0, 0);
+    /* border-left-color: black; */
+  }
+
+  #myNavbar{
+    color: rgb(187, 241, 146);
+  }
+  #home{
+    height: 55%;
+  }
+  #profilePic{
+    height: 30rem;
+  }
+  #bar{
+    width: 110%;
+    margin-left: -50px;
+    font-weight: bold;
+    /* border: 10px solid; */
+    border-top-color: black;
+    /* border-right-color: black; */
+    border-bottom-color:black;
+    /* border-left-color: black; */
+    background-color: rgb(173, 173, 173);
+  }
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar" id="myNavbar">
+<a class="w3-bar-item w3-button w3-hover-yellow w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+  onclick="toggleFunction()" title="Toggle Navigation Menu">
+  <i class="fa fa-bars"></i>
+</a>
+
+<a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOME</a>
+<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
+<a href="#coolBar" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+</div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
+<div class="w3-display-middle">
+  <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
+
+</div>
+<h1 id="home">Luke J. Hayes</h1>
+</div>
+
+<br><br><br><br><br><br><br>
+<h2>MERN Stack Developer</h2>
+<h3>General Information</h3>
+
+          <!-- COOL BAR WITH BASIC INFO -->
+<div class="w3-content w3-container w3-padding-84" id="coolBar">
+<div class="w3-row w3-center" id="bar">
+
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">3.85</span><br>
+      College GPA
     </div>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">500+</span><br>
+      Code Projects
     </div>
+
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">250+</span><br>
+      D.M.A. Edits
+    </div>
+
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">10+</span><br>
+      Languages
+    </div>
+    
   </div>
+</div>
 
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-    </div>
-  </div>
-  <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64" id="about">
-    <!-- <img src="./[images]/Chicago_BG.jpg">  -->
-    <h3 class="w3-center">WEB-DESIGN PORTFOLIO</h3>
-    <p class="w3-center"><em>ABOUT ME</em></p>
-    <p>Twenty-one year old, motivated Computer Science Major taking classes at Northwestern University. Member of Phi
-      Theta Kappa Honors Society. Proficient in Business & Data Analytics, specializing in front-end/ back-end web and
-      mobile development. I am a hardworking, goal-oriented, creative, and personable student aspiring to use my skills
-      to help society for the greater good. </p>
-    <div class="w3-row">
-      <div class="w3-col m6 w3-center w3-padding-large">
-        <p>Luke J. Hayes</p>
-        <h1>
-          <img id="profilePic" src="./[images]/me.jpeg">
-      </div>
-
-      <!-- Hide this text on small devices -->
-      <div class="w3-col m6 w3-hide-small w3-padding-large">
-
-        <p>
-          Job: Truck Route Helper:
-        </p>
-        <p>
-          Dates Employed: Nov 2017 – Dec 2018
-        </p>
-        </p>
-        Employment Duration: 1 yr 2 mos
-        </p>
-        </p>
-        Location: Alsip IL
-        </p>
-        </p>
-        <p>
-          <p>
-        Delivered product to stores quickly and efficiently, interacting with store managers to make better
-        relationships with our companies customers.
-      </p>
-        <p>
-        Job: Sales Merchandiser:
-        </p>
-        <p>
-        Dates Employed: Sep 2016 – Nov 2017
-      </p>
-      <p>
-        Employment Duration: 1 yr 3 mos
-      </p>
-      <p>
-        Designed interactive and engaging displays throughout various large scale stores such as Jewel Osco and Walmart.
-        Arranged our companies brands in desirable positions and areas around the stores to maximize optimal sales.
-        Effectively communicated and coordinated execution of the planogram with store management.
-      </p>
-    </div>
-    <p class="w3-large w3-center w3-padding-16">My Top Skills</p>
+<br>
+<h3>My Top Skills</h3>
+          <!-- BAR STYLE CHART WITH TOP SKILLS -->
+  <div class="w3-content w3-container w3-padding-50" id="skills">
+    <!-- <p class="w3-large w3-center w3-padding-16"></p> -->
     <p class="w3-wide"><i class="fa fa-camera"></i>Front-End Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    <div class="w3-grey">
+      <div class="w3-container w3-padding-small w3-black w3-center" style="width:90%">90%</div>
     </div>
     <p class="w3-wide"><i class="fa fa-laptop"></i>Back-End Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    <div class="w3-grey">
+      <div class="w3-container w3-padding-small w3-black w3-center" style="width:85%">85%</div>
     </div>
     <p class="w3-wide"><i class="fa fa-photo"></i>Digital Media Arts</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    <div class="w3-grey">
+      <div class="w3-container w3-padding-small w3-black w3-center" style="width:80%">80%</div>
     </div>
-    <br></br>
+  </div>
+  <br><br><br>
+
+
+<div class="projectBorder">
+    <h3 class="portfolio"> Deployed Web Apps!</h3>
+<!-- CONTAINER FOR MY PORTFOLIO OF DEPLOYED PROJECTS -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/chrystal-collector/">
+        <img src="./[images]/react-logo.png" style="width: 95%" onclick="onClick(this)" alt="React Game">
+        <p>React Game</p>
+        </a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/Train-Scheduler/">
+        <img src="./[images]/AWT-Train.png" style="width: 95%" onclick="onClick(this)"alt="Train Scheduler">
+        <p>Train Scheduler</p>
+        </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://whispering-bastion-84089.herokuapp.com/">
+        <img src="./[images]/ff-logo.png" style="width: 95%" onclick="onClick(this)" alt="Friend Finder">
+        <p>Friend Finder</p>
+      </a>
   </div>
 
-  <!-- Container (Portfolio Section) -->
-  <!-- <div class="w3-content w3-container w3-padding-64" id="portfolio"> -->
-    <h3 class="w3-center">Education</h3>
-    <p class="w3-center"><em>Currently Enrolled at Northwestern University studying Computer/Data Sciences. <br> Clicking
-        on the images of my projects will redirect you to some of my deployed web programs! </em></p>
-        <br>
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-
-      <div class="w3-col m3">
-          <a href="https://lukejhayes.github.io/Train-Scheduler/">
-          <img src="./[images]/AWT-Train.png" onclick="onClick(this)"alt="Train Scheduler">
-          <p>Train Scheduler</p>
-          </a>
-      </div>
-
-      <div class="w3-col m3">
-          <a href="https://lukejhayes.github.io/unit-4-game/">
-          <img src="./[images]/diamond.png" style="width: 95%" onclick="onClick(this)" alt="Chrystal Collector">
-          <p>Chrystal Collector</p>
-          </a>
-      </div>
-
-      <div class="w3-col m3">
-          <a href="https://lukejhayes.github.io/GiphyAPI/">
-            <img src="./[images]/giphy-icon.png" style="width: 95%" onclick="onClick(this)" alt="GiphyAPI">
-            <p>GiphyAPI</p>
-          </a>
-      </div>
-
-      <div class="w3-col m3">
-          <a href="https://lukejhayes.github.io/Tipsy/">
-          <img src="./[images]/wine-glass.png" style="width: 95%" onclick="onClick(this)" alt="Tipsy DataBase">
-          <p>Tipsy</p>
-          </a>
-      </div>
-
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/unit-4-game/">
+        <img src="./[images]/diamond.png" style="width: 95%" onclick="onClick(this)" alt="Chrystal Collector">
+        <p>Chrystal Collector</p>
+        </a>
     </div>
 
-    <div class="w3-row w3-center w3-light-grey w3-padding-16">
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">3.85</span><br>
-          College GPA
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">500+</span><br>
-          Code Projects
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">250+</span><br>
-          DMA Projects
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">17+</span><br>
-          Education (Yr)
-        </div>
+  </div>
+
+  <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/TriviaGame/">
+        <img src="./[images]/trivia-logo.png" style="width: 95%" onclick="onClick(this)" alt="Trivia Game">
+        <p>Trivia</p>
+        </a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/Tipsy/">
+        <img src="./[images]/wine-glass.png" style="width: 95%" onclick="onClick(this)" alt="Tipsy">
+        <p>Tipsy</p>
+        </a>
+    </div>
+  <!-- 
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/GiphyAPI/">
+          <img src="./[images]/giphy-icon.png" style="width: 95%" onclick="onClick(this)" alt="GiphyAPI">
+          <p>GiphyAPI</p>
+        </a>
+    </div> -->
+
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/FizzBuzz/">
+          <img src="./[images]/fizz-logo.png" style="width: 95%" onclick="onClick(this)" alt="GiphyAPI">
+          <p>FizzBuzz</p>
+        </a>
+    </div>
+
+
+    <div class="w3-col m3">
+        <a href="https://lukejhayes.github.io/bubble-sort/">
+        <img src="./[images]/bubble-logo.png" style="width: 95%" onclick="onClick(this)" alt="Bubble Sort">
+        <p>Bubble Sort</p>
+        </a>
+    </div>
+
+  </div>
+  </div>
+
+  <h3> Photoshop Edits </h3>
+  <div class="edits">
+    <br><br>
+      <img src="./[images]/EvanftDallasK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer">
+      <p>Promotional Flyer</p>
+
+      <img src="./[images]/Evan ft. DALLASK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer2">
+      <p>Promotional Flyer</p>
+
+      <img src="./[images]/Kane.png" style="width: 50%" onclick="onClick(this)" alt="Kane">
+      <p>Kane Edit</p>
+
+      <img src="./[images]/Ben Commit.png" style="width: 50%" onclick="onClick(this)" alt="Commit">
+      <p>College Commit</p>
+
+      <img src="./[images]/Panerin.png" style="width: 50%" onclick="onClick(this)" alt="Panerin">
+      <p>Panerin Edit</p>
+  </div>
+
+<br><br>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-0" id="contact">
+    <h4 class="w3-center">Contact me for inquiries!</h4>
+
+    <div class="w3-col m8 w3-panel contact">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+        lukehayes2021@u.northwestern.edu<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 708 289-9018<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
       </div>
-
-      <!-- Container (Contact Section) -->
-      <div class="w3-content w3-container w3-padding-32" id="contact">
-          <h3 class="w3-center">Contact me today!</h3>
-
-          <div class="w3-col m8 w3-panel contact">
-            <div class="w3-large w3-margin-bottom">
-              <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-              <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 708 289-9018<br>
-              <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-              lukehayes2021@u.northwestern.edu<br>
-            </div>
-            <!-- <p>Provide your information and send me a message!</p> -->
-            <form action="/action_page.php" target="_blank">
-              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                </div>
-                <div class="w3-half">
-                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                </div>
-              </div>
-              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-              <button class="w3-button w3-black w3-right w3-section" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-              </button>
-            </form>
+      <!-- <p>Provide your information and send me a message!</p> -->
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
         </div>
-      </div>
-      <a href="#home" class="w3-button w3-light-grey">
-          <i class="fa fa-arrow-up w3-margin-right w3-margin-bottom w3-center"></i>To the top</a>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+</div>
 
-      </script>
+<!-- <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right w3-margin-bottom w3-center"></i>To the top</a> -->
+
+</script>
 
 </body>
 
