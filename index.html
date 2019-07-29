@@ -28,7 +28,6 @@
     font-family: 'Butcherman', cursive;
     font-family: 'Pacifico', cursive;
     filter: drop-shadow(5px 5px 2px #ff0000);
-    height: 200px;
     color: lightgrey;
     /* position: relative; */
   }
@@ -113,16 +112,18 @@
     border-bottom-color: rgb(0, 0, 0);
     /* border-left-color: black; */
   }
-
+.home-img{
+  margin-top: 10%;
+}
 
   #myNavbar{
     color: rgb(187, 241, 146);
+    font-weight: bolder;
+    background-color: #00e5ff;
+    filter: opacity(90%);
   }
   #home{
     height: 55%;
-  }
-  #profilePic{
-    height: 30rem;
   }
   #bar{
     width: 110%;
@@ -139,23 +140,23 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-<div class="w3-bar" id="myNavbar">
-<a class="w3-bar-item w3-button w3-hover-yellow w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-  onclick="toggleFunction()" title="Toggle Navigation Menu">
-  <i class="fa fa-bars"></i>
-</a>
+  <div class="w3-bar" id="myNavbar">
+  <a class="w3-bar-item w3-button w3-hover-yellow w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+    onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i>
+  </a>
 
-<a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOME</a>
-<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-</div>
+  <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOME</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
-<a href="#coolBar" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-</div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
+  <a href="#coolBar" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+  <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
 </div>
 
 <div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
@@ -163,6 +164,7 @@
   <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
 
 </div>
+<br><br><br>
 <h1 id="home">Luke J. Hayes</h1>
 </div>
 
