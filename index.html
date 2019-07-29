@@ -119,6 +119,7 @@
     text-align: center;
     background-color: #00e5ff;
     color: black;
+    font-weight: bolder;
     /* position: absolute; */
     /* bottom: 0; */
     /* width: 100%; */
@@ -127,7 +128,16 @@
     margin-top: 2%;
     /* display: block; */
 }
-
+.scroll {
+  border-radius: 5px;
+  height: auto;
+  width: 80%;
+  height: 90%;
+  overflow: scroll;
+  justify-self: end;
+  align-self: flex-start;
+  background: rgba(61, 59, 59, 0.322);
+}
   #myNavbar{
     color: rgb(187, 241, 146);
     font-weight: bolder;
@@ -308,24 +318,25 @@
   </div>
 
   <h3> Photoshop Edits </h3>
+  <!-- <div class="scroll"> -->
   <div class="edits">
     <br><br>
-      <img src="./[images]/EvanftDallasK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer">
+      <img class="scroll" src="./[images]/EvanftDallasK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer">
       <p>Promotional Flyer</p>
 
-      <img src="./[images]/Evan ft. DALLASK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer2">
+      <img class="scroll" src="./[images]/Evan ft. DALLASK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer2">
       <p>Promotional Flyer</p>
 
-      <img src="./[images]/Kane.png" style="width: 50%" onclick="onClick(this)" alt="Kane">
+      <img class="scroll" src="./[images]/Kane.png" style="width: 50%" onclick="onClick(this)" alt="Kane">
       <p>Kane Edit</p>
 
-      <img src="./[images]/Ben Commit.png" style="width: 50%" onclick="onClick(this)" alt="Commit">
+      <img class="scroll" src="./[images]/Ben Commit.png" style="width: 50%" onclick="onClick(this)" alt="Commit">
       <p>College Commit</p>
 
-      <img src="./[images]/Panerin.png" style="width: 50%" onclick="onClick(this)" alt="Panerin">
+      <img class="scroll" src="./[images]/Panerin.png" style="width: 50%" onclick="onClick(this)" alt="Panerin">
       <p>Panerin Edit</p>
   </div>
-
+<!-- </div> -->
 <br><br>
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-0" id="contact">
