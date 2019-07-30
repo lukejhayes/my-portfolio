@@ -55,8 +55,12 @@
     text-align: center;
     font-weight: 600;
     font-size: 40px;
-    /* background-color:lightgray;
-    border: 3px solid black; */
+    background-color:#FCF6F6;
+    margin-right: 10%;
+    border-top: 10px solid #00e5ff;
+    border-left: 10px solid #00e5ff;
+    border-right: 10px solid #00e5ff;
+    /* border: 3px solid black;  */
     font-family: 'Saira Stencil One', cursive;
     font-family: 'Butcherman', cursive;
     font-family: 'Pacifico', cursive;
@@ -68,10 +72,8 @@
     font-size: 112%;
     text-decoration: underline;
   }
-  .contact{
-    background-color: white;
-    border: 10px 10px 10px 10px solid black;
-    font-weight: 900;
+  .portfolio{
+    border-top: 10px solid rgb(0, 0, 0);
   }
   .w3-col {
     align-items: center;
@@ -81,7 +83,12 @@
   }
   .contact {
     margin-left: 13%;
-    filter: drop-shadow(5px 5px 2px #00e5ff);
+    font-weight: 800;
+    /* filter: drop-shadow(5px 5px 2px #00e5ff); */
+    /* background-color: #FCF6F6; */
+  }
+  #contact{
+    background-color: #FCF6F6;
   }
   .w3-xlarge{
     font-weight: 450;
@@ -104,27 +111,26 @@
     /* border-left-color: black; */
   }
   .edits{
+    border-top: 10px solid rgb(0, 0, 0);
+    /* border-bottom: 10px solid rgb(0, 0, 0); */
     text-align: center;
     font-weight: 400;
     filter: drop-shadow(10px 10px 10px 10px #00e5ff);
     /* background-color:lightgray; */
     /* border: 5px solid rgb(0, 23, 124); */
-    background-color: rgba(216, 250, 250, 0.671);
-    /* background-color: #FAF2F2; */
-    border: 8px solid;
-    border-top-color: rgb(0, 0, 0);
-    /* border-right-color: black; */
-    border-bottom-color: rgb(0, 0, 0);
-    /* border-left-color: black; */
+    /* background-color: rgba(216, 250, 250, 0.671); */
+
   }
 .home-img{
   margin-top: 10%;
+  border: none;
 }
 .my-footer {
     text-align: center;
-    background-color: #00e5ff;
-    color: black;
-    font-weight: bolder;
+    background-color: rgb(65,88,120);
+    color: #00e5ff;
+    font-weight: 800;
+    font-size: 16px;
     /* position: absolute; */
     /* bottom: 0; */
     /* width: 100%; */
@@ -149,10 +155,13 @@
     border-right-color: black;
     border-bottom-color: rgb(0, 0, 0);
 } */
+html {
+  scroll-behavior: smooth;
+}
   #myNavbar{
-    color: rgb(187, 241, 146);
+    color: #00e5ff;
     font-weight: bolder;
-    background-color: #00e5ff;
+    background-color: rgb(65,88,120);
     filter: opacity(90%);
     filter: drop-shadow black;
   }
@@ -169,6 +178,54 @@
     border-bottom-color:black;
     /* border-left-color: black; */
     background-color: rgb(173, 173, 173);
+  }
+  .cli{
+    border-top: 10px solid rgb(0, 0, 0);
+    background-color: rgba(216, 250, 250, 0.671);
+  }
+  img{
+    filter: drop-shadow(10px 10px 10px 10px #00e5ff);
+    border: 5px solid #00e5ff; 
+    background-color: #FCF6F6;
+  }
+  iframe{
+    text-align: center;
+    margin-left: 7.5%;
+    text-align: center;
+    font-weight: 400;
+    filter: drop-shadow(10px 10px 10px 10px #00e5ff);
+    /* background-color:lightgray; */
+    border: 5px solid #00e5ff;
+    background-color: rgb(0, 23, 124);
+  }
+  h5{
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .dallasK{
+    float: right;
+    margin-right: 10%;
+  }
+  .nave{
+    float: left;
+    margin-left: 10%;
+  }
+  .kane{
+    float: right;
+    margin-right: 10%;
+  }
+  .ben{
+    float:left;
+    margin-right: 10%;
+  }
+  .pan{
+    float: left;
+    margin-left: 10%;
+  }
+  .mag{
+    float:left;
+    margin-left: 10%;
   }
 </style>
 
@@ -198,12 +255,12 @@
   <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
 
 </div>
-<br><br><br>
+<br><br><br><br><br><br>
 <h1 id="home">Luke J. Hayes</h1>
 </div>
 
-<br><br><br><br><br><br><br><br><br>
 <h2>MERN Stack Developer</h2>
+<h2>Digital Media Artist</h2>
 <h3>General Information</h3>
 
           <!-- COOL BAR WITH BASIC INFO -->
@@ -252,10 +309,10 @@
       <div class="w3-container w3-padding-small w3-black w3-center" style="width:80%">80%</div>
     </div>
   </div>
-  <br><br><br>
+  <br><br>
 
-<h3 class="portfolio"> Deployed Web Apps!</h3>
 <div class="projectBorder">
+    <h3> Deployed Web Apps!</h3>
 <!-- CONTAINER FOR MY PORTFOLIO OF DEPLOYED PROJECTS -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
 <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -284,7 +341,7 @@
 
   <div class="w3-col m3">
       <a href="https://lukejhayes.github.io/bubble-sort/">
-      <img src="./[images]/bubble-logo.png" style="width: 95%" onclick="onClick(this)" alt="Bubble Sort">
+      <img src="./[images]/bubble-logo.png" style="width: 105%" onclick="onClick(this)" alt="Bubble Sort">
       <p>Bubble Sort</p>
       </a>
   </div>
@@ -328,35 +385,50 @@
 
 
   </div>
+
   </div>
+<div class="games">
+  <h3> Video Game Creations </h3>
+  <h5> (Using C#, Java, Unity 3D and Blender for modeling) </h5>
 
-  <h3> Photoshop Edits </h3>
-  <!-- <div class="scroll"> -->
-  <div class="edits">
-    <br><br>
-      <img class="" src="./[images]/EvanftDallasK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer">
-      <p>Promotional Flyer</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/10kGjoxGf_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <img src="./[images]/Evan ft. DALLASK.png" style="width: 50%" onclick="onClick(this)" alt="Flyer2">
-      <p>Promotional Flyer</p>
-
-      <img src="./[images]/Kane.png" style="width: 50%" onclick="onClick(this)" alt="Kane">
-      <p>Kane Edit</p>
-
-      <img src="./[images]/Ben Commit.png" style="width: 50%" onclick="onClick(this)" alt="Commit">
-      <p>College Commit</p>
-
-      <img src="./[images]/Panerin.png" style="width: 50%" onclick="onClick(this)" alt="Panerin">
-      <p>Panerin Edit</p>
-  </div>
-
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ocg26K8trNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zOnnJDo9UVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HM5g__6NpTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+
+<div class="cli">
+  <h3>Command Line Interface Programs</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KRRIof3Gy84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cCWyFb4aFWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+
+  <div class="edits">
+      <h3> Photoshop Edits </h3>
+    <br>
+
+      <img class="pan"src="./[images]/Panerin.png" style="width: 40%" onclick="onClick(this)" alt="Panerin">
+
+      <img class="ben" src="./[images]/Ben Commit.png" style="width: 40%" onclick="onClick(this)" alt="Commit">
+
+      <img class="kane" src="./[images]/Kane.png" style="width: 40%" onclick="onClick(this)" alt="Kane">
+      <img class="nave" src="./[images]/Evan ft. DALLASK.png" style="width: 40%" onclick="onClick(this)" alt="Flyer2">
+
+      <img class="dallasK" src="./[images]/EvanftDallasK.png" style="width: 40%" onclick="onClick(this)" alt="Flyer">
+      <img class="mag" src="./[images]/mag.png" style="width: 40%" onclick="onClick(this)" alt="mag">
+  </div>
+
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-0" id="contact">
-    <h4 class="w3-center">Contact me for inquiries!</h4>
-
-
-  <div class="contact">
+<div class="w3-content w3-container w3-padding-0">
+  <div class="contact" id="contact">
+      <br><br>
+  <h4 class="w3-center">Contact me for inquiries!</h4>
     <div class="w3-col m8 w3-panel contact">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
