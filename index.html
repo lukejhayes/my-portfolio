@@ -85,6 +85,7 @@
   }
   #contact{
     font-weight: 800;
+    margin-left: 13%;
     filter: drop-shadow(5px 5px 2px #00e5ff);
   }
   .w3-xlarge{
@@ -170,6 +171,21 @@ html {
     border: 5px solid #00e5ff; 
     background-color: #FCF6F6;
   }
+  .email{
+    border: none;
+    font-weight: 700;
+    background-color: #F9EEEE;
+  }
+  .phone{
+    border: none;
+    font-weight: 700;
+    background-color: #F9EEEE;
+  }
+  .location{
+    border: none;
+    font-weight: 700;
+    background-color: #F9EEEE;
+  }
   iframe{
     text-align: center;
     margin-left: 7.5%;
@@ -227,9 +243,9 @@ html {
     <i class="fa fa-bars"></i>
   </a>
 
-  <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HOME</a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="#home" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-user"></i> HOME</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -447,10 +463,13 @@ html {
   <h4 class="w3-center">Contact me for inquiries!</h4>
     <div class="w3-col m8 w3-panel contact">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+        <img class="email" src="./[images]/email-logo.png" style="width: 5%" alt="Email">
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> EMAIL:
         lukehayes2021@u.northwestern.edu<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 708 289-9018<br>
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Location: Chicago, US<br>
+        <img class="phone" src="./[images]/phone-logo.png" style="width: 5%" alt="Phone">
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> PHONE: (708) 289-9018<br>
+        <img class="location" src="./[images]/location-logo.png" style="width: 5%" alt="Location">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> LOCATION: Chicago, US<br>
       </div>
       <!-- <p>Provide your information and send me a message!</p> -->
       <form action="/action_page.php" target="lukehayes2021@u.northwestern.edu">
@@ -463,7 +482,7 @@ html {
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <button class="w3-button w3-black w3-hover-yellow w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
