@@ -21,7 +21,6 @@
     html {
       scroll-behavior: smooth;
     }
-
     /* NavBar Styling */
     #myNavbar{
     color: #00e5ff;
@@ -29,24 +28,26 @@
     background-color: rgb(65,88,120);
     filter: opacity(90%);
     }
-
     /* Home image (Chicago Starry) over-write */
     .home-img{
       border: none;
+      /* height: 250%; */
     }
-
     /* Recs on navbar */
     #recs{
       float: right;
     }
-    #home #portfolio #contact{
+    #portfolio #contact{
       font-size: 130%;
       font-weight: bolder;
     }
-
+    #home{
+      height: 300px;
+    }
     /* Name on header */
     h1{
-      margin-top: 40px;
+      /* margin-top: 80px; */
+      /* height: 1000px; */
       text-align: center;
       font-weight: 600;
       font-size: 90px;
@@ -55,8 +56,19 @@
       font-family: 'Permanent Marker', cursive;
       filter: drop-shadow(10px 10px 4px #F6EFA6);
       color: #00e5ff;
-      padding-top: 60px;
-      padding-bottom: 90px;
+      /* padding-top: 10px; */
+      /* padding-bottom: 90px; */
+    }
+
+    span {
+      border-right: .05em solid;
+      animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+      50% {
+        border-color: transparent;
+      }
     }
 
     /* Skillset on header */
@@ -72,7 +84,6 @@
       /* background-color:lightgray;
       border: 3px solid black; */
     }
-
     /* Specified section headers */
     h3{
       text-align: center;
@@ -81,7 +92,6 @@
       font-family: 'Saira Stencil One', cursive;
       filter: drop-shadow(5px 5px 2px #00e5ff);
     }
-
     /* Contact Me heading text/box */
     h4{
       margin-left: 13%;
@@ -99,14 +109,12 @@
       /* filter: drop-shadow(5px 5px 2px #00e5ff); */
       color: rgb(0, 0, 0);
     }
-
     /* Speficied Section Sub-Headers */
     h5{
       font-weight: bolder;
       text-align: center;
       text-decoration: underline;
     }
-
     /* Info Bar Styling */
     #bar{
       background-color: rgb(173, 173, 173);
@@ -119,10 +127,9 @@
       border-bottom-color:black;
     }
     /* Info Bar Top Margin */
-    #coolBar{
-      margin-top: 50px;
-    }
-
+    /* #coolBar{
+      margin-top: 10px;
+    } */
     /* Base styling for all images */
     img{
       filter: drop-shadow(10px 10px 10px 10px #00e5ff);
@@ -138,13 +145,11 @@
       border: none;
       background-color: rgb(173, 173, 173);
     }
-
     /* Skillset Chart Styling */
     p{
       font-weight: 900;
       font-size: 120%;
     }
-
     /* Deployed Web App Styling */
     .projectBorder{
       border-top: 10px solid rgb(0, 0, 0);
@@ -155,23 +160,19 @@
       /* background-color: #FAF2F2; */
       /* border-left-color: black; */
     }
-
     /* Video Game Section */
     .games{
       border-top: 10px solid rgb(0, 0, 0);
     }
-
     /* CLI Section */
     .cli{
       border-top: 10px solid rgb(0, 0, 0);
       background-color: rgba(216, 250, 250, 0.671);
     }
-
     /* Blender Section */
     .blender{
       border-top: 10px solid rgb(0, 0, 0);
     }
-
     /* Splash Screen Section */
     .splash{
       border-top: 10px solid rgb(0, 0, 0);
@@ -181,7 +182,6 @@
       height: 300%;
       width: 100%;
     } */
-
     /* Photoshop Edits Styling */
     .edits{
       border-top: 10px solid rgb(0, 0, 0);
@@ -193,7 +193,6 @@
       /* border: 5px solid rgb(0, 23, 124); */
       /* background-color: rgba(216, 250, 250, 0.671); */
     }
-
     /* Contact Me in-depth styling */
     .contact {
       margin-left: 18%;
@@ -203,7 +202,6 @@
       width:70%;
       /* float: left; */
     }
-
     #contact{
       margin-left: 18%;
       font-weight: 800;
@@ -212,7 +210,6 @@
       filter: drop-shadow(5px 5px 2px #00e5ff);
       /* float: left; */
     }
-
     /* Footer Styling */
     .my-footer {
         text-align: center;
@@ -228,7 +225,9 @@
         margin-top: 2%;
         /* display: block; */
     }
-
+    /* .bio{
+      height:100px;
+    } */
     /* Contact Icon Styles */
     .email{
       border: none;
@@ -245,7 +244,6 @@
       font-weight: 700;
       background-color: #F9EEEE;
     }
-
     /* Video Box Styles */
     iframe{
       text-align: center;
@@ -256,6 +254,9 @@
       /* background-color:lightgray; */
       border: 5px solid #00e5ff;
       background-color: rgb(0, 23, 124);
+    }
+    .headerSpacing{
+      height: 200px;
     }
     
     /* Specific Photoshop Styles per className */
@@ -318,20 +319,30 @@
 </div>
 
 <!-- HOME IMAGE -->
-<div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
+<!-- <div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
   <div class="w3-display-middle">
-    <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
+    <img height="820px" class="home-img" src="./[images]/Chicago_BG.jpg"> 
   </div>
+</div> -->
+<!-- HOME IMAGE -->
+<div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
+    <div class="w3-display-middle">
+      <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
+    </div>
 
 <!-- NAME HEADING -->
-<h1 id="home"> Luke J. Hayes </h1>
-</div>
+<br><br><br><br><br><br><br><br>
+<h1 class="headerSpacing"> Luke J. Hayes 
+<h1>Digital Portfolio</h1>
+</h1>
+
 <!-- SKILLSET HEADING -->
-<h2 class="bio"> <br><br>Digital Media Artist | MERN Stack Developer | 3D Animator </h2>
+<!-- <h2 class="bio">  </h2> -->
 
 
 <!-- COOL BAR WITH BASIC INFO -->
-<div class="w3-content w3-container w3-padding-84" id="coolBar">
+<div class="w3-content w3-container " id="coolBar">
+  <br>
     <h3>General Information</h3>
   <div class="w3-row w3-center" id="bar">
 
@@ -459,11 +470,13 @@
 <div class="games">
   <h3> Video Game Creations </h3>
     <h5> (Using C#, Java, Unity 3D and Blender for modeling) </h5>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/10kGjoxGf_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ocg26K8trNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jqcLsI2Gif0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-NqIEn6HN-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br><br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/zOnnJDo9UVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/HM5g__6NpTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/zOnnJDo9UVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/qcKnSgYUHVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HM5g__6NpTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bhZH9hr6x7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br>
 
@@ -578,7 +591,7 @@
 
 <!-- FOOTER SECTION -->
 <div class="fixed-bottom text-center my-footer"> Copyright of Luke J. Hayes </div>
-
+<script src="animate.js"></script>
 </body>
 
 </html>
