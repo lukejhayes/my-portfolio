@@ -42,7 +42,12 @@
       black
     );
 }
-  
+  .touch{
+    /* text-decoration: underline; */
+    font-size: 300%;
+    color:rgb(127,110,214);
+  }
+
     html {
       scroll-behavior: smooth;
     }
@@ -92,7 +97,7 @@
 
     span {
       border-right: .05em solid;
-      animation: caret 1s steps(1) infinite;
+      /* animation: caret 1s steps(1) infinite; */
     }
 
     @keyframes caret {
@@ -100,7 +105,6 @@
         border-color: transparent;
       }
     }
-
     /* Skillset on header */
     h2{
       text-align: center;
@@ -213,7 +217,7 @@
     /* Skillset Chart Styling */
     p{
       font-weight: 900;
-      font-size: 120%;
+      font-size: 130%;
       color: #BEC0C2;
     }
     /* Deployed Web App Styling */
@@ -226,29 +230,6 @@
       /* background-color: #FAF2F2; */
       /* border-left-color: black; */
     }
-    /* Video Game Section */
-    .games{
-      /* border-top: 50px solid rgb(0, 0, 0); */
-    }
-    /* CLI Section */
-    .cli{
-      /* border-top: 50px solid rgb(0, 0, 0); */
-      /* background-color: rgba(216, 250, 250, 0.671); */
-    }
-    /* Blender Section */
-    .blender{
-      /* border-top: 50px solid rgb(0, 0, 0); */
-    }
-    /* Splash Screen Section */
-    .splash{
-      /* border-top: 50px solid rgb(0, 0, 0); */
-      /* background-color: rgba(216, 250, 250, 0.671); */
-    }
-    /* .recs{
-      height: 300%;
-      width: 100%;
-    } */
-    /* Photoshop Edits Styling */
 
     .edits{
       /* border-top: 50px solid rgb(0, 0, 0); */
@@ -271,8 +252,9 @@
       /* float: left; */
       color: #F6EFA6;
     }
+
     form{
-      margin-left: 20%;
+      margin-left: 30%;
       font-weight: 800;
       font-size: 110%;
       filter: drop-shadow(5px 5px 2px #00e5ff);
@@ -304,6 +286,9 @@
         height: 50px;
         margin-top: 2%;
         /* display: block; */
+    }
+    .floatL{
+      float: left;
     }
     /* .bio{
       height:100px;
@@ -660,16 +645,12 @@
 
     </div>
     <br><br>
-    <div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
-      <div class="container-contact100">
-        <div class="wrap-contact100">
-          <!-- <div class="contact100-pic js-tilt" data-tilt>
-            <img src="[images]/Logo Chi Background.jpeg" width: 300%; alt="IMG">
-          </div> -->
-    
-          <form class="contact100-form validate-form">
-            <span class="contact100-form-title">
-              Get in touch
+
+    <div class="about-me">
+      <p>About Me: Motivated Computer Science Major taking classes at Northwestern University. Member of Phi Theta Kappa Honors Society. Proficient in Business & Data Analytics, specializing in Front-End/ Back-End MERN Web and Mobile Development. I have a profound passion for Digital Media Arts and 3D Modeling, using Adobe After Effects, Photoshop & Blender. </p><br>
+    </div>
+          <form class="contact100-form validate-form" id="contactForm">
+              <h1 class="touch">Get in touch</h1><br>
             </span>
     
             <div class="wrap-input100 validate-input" data-validate = "Name is required">
@@ -699,9 +680,14 @@
               </button>
             </div>
           </form>
-        </div>
+
+      </div>
+        <br>
+        <div class="fixed-bottom text-center my-footer"> Copyright of Luke J. Hayes </div>
+
       </div>
     </div>
+    <!-- <div class="fixed-bottom text-center my-footer"> Copyright of Luke J. Hayes </div> -->
 <!-- FOOTER SECTION -->
 
 <!--===============================================================================================-->
@@ -721,7 +707,7 @@
 <!--===============================================================================================-->
 </div>
 
-  <div class="fixed-bottom text-center my-footer"> Copyright of Luke J. Hayes </div>
+  
 </script>
 
 <script src="animate.js"></script>
