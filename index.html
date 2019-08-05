@@ -34,16 +34,17 @@
 <style>
     body{
       background-color: #F9EEEE;
-      height: 100px;
       background-color:  #F6EFA6;;
       background-image:
       radial-gradient(
       gray,
       black
     );
-}
+  }
   .touch{
     /* text-decoration: underline; */
+    margin-top: 0%;
+    margin-bottom: 0%;
     font-size: 300%;
     color:rgb(127,110,214);
   }
@@ -54,6 +55,7 @@
     iframe{
       filter: drop-shadow(10px 10px 4px #F6EFA6);
     }
+
     /* NavBar Styling */
     #myNavbar{
     /* color: #F6EFA6; */
@@ -62,12 +64,14 @@
     background-color: rgb(65,88,120);
     filter: opacity(90%);
     }
+
     /* Home image (Chicago Starry) over-write */
     .home-img{
       fill-opacity: 30%;;
       border: none;
-      /* height: 250%; */
+      /* height: 100%; */
     }
+
     /* Recs on navbar */
     #recs{
       float: right;
@@ -76,16 +80,18 @@
       font-size: 130%;
       font-weight: bolder;
     }
-    #home{
+    /* #home{
       height: 300px;
-    }
+    } */
     /* Name on header */
     h1{
       /* margin-top: 80px; */
       /* height: 1000px; */
+      margin-bottom: 12%;
+      margin-top: 17.5%;
       text-align: center;
-      font-weight: 600;
-      font-size: 90px;
+      font-weight: 800;
+      font-size: 120px;
       font-family: 'Roboto Mono', monospace;
       font-family: 'Roboto', sans-serif;
       font-family: 'Permanent Marker', cursive;
@@ -165,6 +171,17 @@
       filter: drop-shadow(5px 5px 2px #00e5ff);
       color:  #F6EFA6;
     }
+    h7{
+      margin-left: 20%;
+      /* margin-top:25%; */
+      font-weight: 800;
+      font-size: 100px;
+      font-family: 'Roboto Mono', monospace;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Permanent Marker', cursive;
+      filter: drop-shadow(10px 10px 4px #F6EFA6);
+      color: #00e5ff;
+    }
     /* Info Bar Styling */
     #bar{
       background-color:  #F6EFA6;
@@ -183,6 +200,7 @@
       /* border-right-color: black; */
       border-bottom-color:black;
     }
+
     /* Info Bar Top Margin */
     #coolBar{
       color: darkblue;
@@ -329,9 +347,7 @@
       border: 5px solid #00e5ff;
       background-color: rgb(0, 23, 124);
     }
-    .headerSpacing{
-      height: 200px;
-    }
+
     .w3-xlarge{
       animation: caret 1s steps(1) infinite;
       color: #044B7F;
@@ -404,24 +420,19 @@
 </div>
 
 <!-- HOME IMAGE -->
-<!-- <div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
-  <div class="w3-display-middle">
-    <img height="820px" class="home-img" src="./[images]/Chicago_BG.jpg"> 
-  </div>
-</div> -->
-<!-- HOME IMAGE -->
 <div class="bgimg-1 w3-display-container w3-opacity-none" id="home">
     <div class="w3-display-middle">
-      <img height='815px'class="home-img" src="./[images]/Chicago_BG.jpg"> 
+        <img style="max-width:auto; height:100%;" class="home-img" src="./[images]/Chicago_BG.jpg"> 
     </div>
+</div>
 
 <!-- NAME HEADING -->
-<br><br><br><br><br><br><br><br>
-<h1 class="headerSpacing"> Luke J. Hayes 
-<h1>Digital Portfolio</h1>
-</h1>
+<h1 class="headerSpacing"> Luke J. Hayes</h1>
+<h7>Digital Portfolio</h7>
+
+
+
   
-  <br>
 <!-- COOL BAR WITH BASIC INFO -->
 <div class="w3-content w3-container " id="coolBar">
   <br>
@@ -480,7 +491,7 @@
 <!-- DEPLOYED WEB APP SECTION -->
 <div class="projectBorder" id="portfolio">
   <h3> Deployed Web Apps!</h3>
-    <h5> Key Languages: Javascript, Node.js, React.js, MongoDB, Express, jQuery, SQL, Sequelize and more.</h5>
+    <h5> Key Languages: Javascript, Node.js, React.js, MongoDB, Express, jQuery, SQL, Sequelize and more.</h5><br>
 
 <!-- CONTAINER FOR MY PORTFOLIO OF DEPLOYED PROJECTS -->
 <div class="w3-content w3-container w3-padding-55">
@@ -551,7 +562,7 @@
 <!-- VIDEO GAME CREATIONS SECTION -->
 <div class="games">
   <h3> Video Game Creations </h3>
-    <h5> Built with C#, Java, Unity 3D and Blender for modeling. </h5>
+    <h5> Built with C#, Java, Unity 3D and Blender for modeling. </h5><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/jqcLsI2Gif0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-NqIEn6HN-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br><br>
@@ -561,19 +572,19 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/bhZH9hr6x7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\
       <br>
 </div>
-<br><br><br>
+<br>
 
 <!-- CLI VIDEOS SECTION -->
 <div class="cli">
   <h3>Command Line Interface Programs</h3>
-    <h5> Built with JavaScript, Node.JS, Express, MongoDB, mongoose & mySQL </h5>
+    <h5> Built with JavaScript, Node.JS, Express, MongoDB, mongoose & mySQL </h5><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/KRRIof3Gy84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/cCWyFb4aFWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br><br><br>
 
     <!-- ALL NEW PYTHON VIDS -->
-    <h5> Built with Python Programming Language. </h5>
+    <h5> Built with Python Programming Language. </h5><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/PQVbUnm96ZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/AfQw2ec4zRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br><br>
@@ -582,7 +593,7 @@
 
     <br><br><br>
 
-    <h5> Built with C++ Programming Language. </h5>
+    <h5> Built with C++ Programming Language. </h5><br>
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/0YrJbDnGta0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vsVCZpPRp50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br><br>
@@ -602,7 +613,7 @@
 <!-- 3D BLENDER ANIMATION VIDEOS SECTION -->
 <div class="blender" id="dma">
   <h3>3D Models & Animations</h3>
-  <h5>Created with Blender 3D Animator</h5>
+  <h5>Created with Blender 3D Animator</h5><br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hwBtIXflLfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ylGm3CUwjGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br><br>
@@ -614,7 +625,7 @@
 
 <div class="splash">
   <h3> 3D Splash Screens </h3>
-  <h5>Created with Adobe After Effecrs & Blender 3D Animator</h5>
+  <h5>Created with Adobe After Effecrs & Blender 3D Animator</h5><br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5-uzoClOrhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nf2a0XAxorw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br><br>
@@ -707,11 +718,11 @@
 <!--===============================================================================================-->
 </div>
 
-  
+</body>
 </script>
 
 <script src="animate.js"></script>
 <script src="main.js"></script>
-</body>
+
 
 </html>
