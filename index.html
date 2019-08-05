@@ -339,6 +339,10 @@
  .me{
    float: left;
    margin-right: 5%;
+   border-bottom: 10px solid rgb(127,110,214);
+    border-top: 10px solid rgb(127,110,214);
+      border-left: 10px solid rgb(127,110,214);
+      border-right: 10px solid rgb(127,110,214);
  }
     /* Video Box Styles */
     iframe{
@@ -388,12 +392,13 @@
       font-weight: bolder;
     }
 
+
 </style>
 
 <!-- BEGGINING OF HTML SCRIPTS -->
 <html>
     <body>
-<div class="gradient">
+<div class="gradient" id="ab">
       
 <!-- Navbar/PAGE LAYOUT RESPONSIVENESS -->
 <div class="w3-top">
@@ -403,7 +408,7 @@
     <i class="fa fa-bars"></i>
   </a>
 
-  <a href="#home" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-user-circle-o"></i> HOME</a>
+  <a href="#ab" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-user-circle-o"></i> HOME</a>
   <a href="#portfolio" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-file-code-o"></i> CODE</a>
   <a href="#dma" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-camera-retro"></i> DMA</a>
   <a href="#contact" class="w3-bar-item w3-button w3-hover-yellow w3-hide-small"><i class="fa fa-address-card-o"></i> CONTACT</a>
@@ -414,7 +419,7 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium">
-  <a href="#coolBar" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+  <a href="#ab" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
   <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
   <a href="#dma" class="w3-bar-item w3-button" onclick="toggleFunction()">DMA</a>
   <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -436,8 +441,6 @@
 <h7>Digital Portfolio</h7>
 
 
-
-  
 <!-- COOL BAR WITH BASIC INFO -->
 <div class="w3-content w3-container " id="coolBar">
   <br>
