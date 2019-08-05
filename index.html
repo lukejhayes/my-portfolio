@@ -43,6 +43,7 @@
   }
   .touch{
     /* text-decoration: underline; */
+    margin-left: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
     font-size: 300%;
@@ -95,8 +96,8 @@
       font-family: 'Roboto Mono', monospace;
       font-family: 'Roboto', sans-serif;
       font-family: 'Permanent Marker', cursive;
-      filter: drop-shadow(10px 10px 4px #F6EFA6);
-      color: #00e5ff;
+      filter: drop-shadow(10px 10px 4px #00e5ff);
+      color: #FFF284;
       /* padding-top: 10px; */
       /* padding-bottom: 90px; */
     }
@@ -179,7 +180,7 @@
       font-family: 'Roboto Mono', monospace;
       font-family: 'Roboto', sans-serif;
       font-family: 'Permanent Marker', cursive;
-      filter: drop-shadow(10px 10px 4px #F6EFA6);
+      filter: drop-shadow(10px 10px 4px #FFF284);
       color: #00e5ff;
     }
     /* Info Bar Styling */
@@ -235,7 +236,7 @@
     /* Skillset Chart Styling */
     p{
       font-weight: 900;
-      font-size: 130%;
+      font-size: 18px;
       color: #BEC0C2;
     }
     /* Deployed Web App Styling */
@@ -335,7 +336,10 @@
       background-color: rgb(40,40,40);
       color: #F6EFA6;
     }
- 
+ .me{
+   float: left;
+   margin-right: 5%;
+ }
     /* Video Box Styles */
     iframe{
       text-align: center;
@@ -381,6 +385,7 @@
     }
     #skills{
       filter: drop-shadow(5px 5px 2px #00e5ff);
+      font-weight: bolder;
     }
 
 </style>
@@ -658,12 +663,20 @@
     <br><br>
 
     <div class="about-me">
-      <p>About Me: Motivated Computer Science Major taking classes at Northwestern University. Member of Phi Theta Kappa Honors Society. Proficient in Business & Data Analytics, specializing in Front-End/ Back-End MERN Web and Mobile Development. I have a profound passion for Digital Media Arts and 3D Modeling, using Adobe After Effects, Photoshop & Blender. </p><br>
+        <img class="me" src="./[images]/me.jpeg" style="width: 45%">
+        <h5>About Me</h5>
+      <p>Motivated Computer Science Major taking classes at Northwestern University. Member of Phi Theta Kappa Honors Society. Proficient in Business & Data Analytics, specializing in Front-End/ Back-End MERN Web and Mobile Development. I have a profound passion for Digital Media Arts and 3D Modeling, using Adobe After Effects, Photoshop & Blender. </p>
+      <h5>Activities & Societies</h5>
+      <p>Computer Programming "Best in Class"</p>
+          <p>Digital Media Arts "Best in Class"</p>
+          <p>President of the Digital Media Arts Club </p>
+          <p>President of the Computer Club</p>
     </div>
+    <br>
           <form class="contact100-form validate-form" id="contactForm">
-              <h1 class="touch">Get in touch</h1><br>
+              <h7 class="touch">Get in touch</h7>
             </span>
-    
+            <br><br>
             <div class="wrap-input100 validate-input" data-validate = "Name is required">
               <input class="input100" type="text" name="name" placeholder="Name">
               <span class="focus-input100"></span>
